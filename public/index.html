@@ -22,14 +22,14 @@
 
   <script type="text/javascript">
 
-  var socket = io.connect('http://150.253.88.117:3000/')
+  var socket = io.connect('http://150.253.88.117:3000/') //connect to the server
 
-  socket.on('connect', function(data){
-    console.log('connected to the server' + socket.id)
+  socket.on('connect', function(data){ //when connected, do something
+    console.log('connected to the server' + socket.id) //log out our id
   })
 
-$("button").click(function(){
-  socket.emit('addRectangle', true);
+$("button").click(function(){ //on click, do something
+  socket.emit('addRectangle', true); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
 })
 
   </script>
