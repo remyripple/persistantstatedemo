@@ -1,16 +1,92 @@
-html, body{
+/*html, body{
   height:100%;
   width: 100%;
   font-size: 30px;
-}
+}*/
 
-.controller{
+.container{
   display: block;
   position: absolute;
-  height:333px;
-  width:333px;
+  height:400px;
+  width:400px;
   left:400px;
   top:50px;
   border: black 1px solid;
   overflow: hidden;
+}
+.controller1{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 100px;
+  left:0px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller2{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 100px;
+  left:100px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller3{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 200px;
+  left:200px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller4{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 100px;
+  left:0px;
+  top:100px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller5{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 200px;
+  left:200px;
+  top:100px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller6{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 100px;
+  left:100px;
+  top:200px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller7{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 400px;
+  left:0px;
+  top:300px;
+  background-color: red;
+  border:yellow 1px dashed;
 }

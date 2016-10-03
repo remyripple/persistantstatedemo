@@ -4,7 +4,7 @@ socket.on('connect', function(data){ //when connected, do something
   console.log('connected to the server' + socket.id) //log out our id
 })
 
-$('controller').click(function(e){ //on click, do something
+$('.container').click(function(e){ //on click, do something
 
 console.log(e);
 
@@ -12,7 +12,7 @@ $('<div>🎃</div>').css({
   'position': 'absolute',
   'top' : e.clientY,
   'left' : e.clientX
-}).appendTo('controller')
+}).appendTo('body')
 
 var dataToSend = {
   'top' : e.clientY,

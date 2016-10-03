@@ -14,7 +14,7 @@ socket.on("projectionRectangle", function(data){ //if we see a projectionRectang
     'position': 'absolute',
     "top" : data.top,
     "left" : data.left
-  }).appendTo('room')
+  }).appendTo('body')
 
 })
 
@@ -26,7 +26,7 @@ socket.on('storedPositionsMessage', function(spData){
       'position': 'absolute',
       "top" : position.top,
       "left" : position.left
-    }).appendTo('room')
+    }).appendTo('body')
 
   })
 
