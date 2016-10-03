@@ -3,12 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>heck</title>
-    <style media="screen">
-    .main{
-      text-align: center;
-      font-size: 30;
-    }
-    </style>
+  <link rel="stylesheet" href="main.css" media="screen" title="no title">
+
   </head>
   <body>
 
@@ -20,18 +16,6 @@
   <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-
-  var socket = io.connect('http://150.253.88.117:3000/') //connect to the server
-
-  socket.on('connect', function(data){ //when connected, do something
-    console.log('connected to the server' + socket.id) //log out our id
-  })
-
-$("button").click(function(){ //on click, do something
-  socket.emit('addRectangle', true); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
-})
-
-  </script>
+<script src="index.js" charset="utf-8"></script>
 
 </html>
