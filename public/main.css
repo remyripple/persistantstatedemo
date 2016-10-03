@@ -3,3 +3,14 @@ html, body{
   width: 100%;
   font-size: 30px;
 }
+
+.controller{
+  display: block;
+  position: absolute;
+  height:333px;
+  width:333px;
+  left:400px;
+  top:50px;
+  border: black 1px solid;
+  overflow: hidden;
+}
