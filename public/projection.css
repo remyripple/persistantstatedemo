@@ -7,10 +7,87 @@
 .room{
   display: block;
   position: absolute;
-  height:333px;
-  width:333px;
+  height:400px;
+  width:400px;
   left:400px;
   top:50px;
   border: black 1px solid;
   overflow: hidden;
+}
+
+.result1{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 100px;
+  left:0px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result2{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 100px;
+  left:100px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result3{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 200px;
+  left:200px;
+  top:0px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result4{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 100px;
+  left:0px;
+  top:100px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result5{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 200px;
+  left:200px;
+  top:100px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result6{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 100px;
+  left:100px;
+  top:200px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.result7{
+  display: block;
+  position: absolute;
+  height:100px;
+  width: 400px;
+  left:0px;
+  top:300px;
+  background-color: red;
+  border:yellow 1px dashed;
 }
