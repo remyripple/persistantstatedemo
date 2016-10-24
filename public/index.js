@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000/') //connect to the server
+var socket = io.connect('http://localhost:3400/') //connect to the server
 
 // var new = '<img src="http://purecontemporary.blogs.com/behind_the_curtains/images/studio_becker_1.jpg">'
 // var old = '<img src="https://s-media-cache-ak0.pinimg.com/originals/14/a1/e7/14a1e768d270438637c8ff49da85e8b6.gif">'
@@ -19,11 +19,14 @@ socket.on('connect', function(data){ //when connected, do something
 // socket.emit('addRectangle', buttonRefresh)
 // })
 
-$('.container').click(function(e){ //on click, do something
+$('.controller1').click(function(e){ //on click, do something
 
 console.log(e);
 
-location.reload(true);
+console.log("click")
+
+
+// location.reload(true);
 
 // $('<div></div>').css({
 //   'position': 'absolute',
@@ -39,7 +42,6 @@ location.reload(true);
 var dataToSend = {
   'top' : e.clientY,
   'left' : e.clientX,
-  'background-color' : 'blue'
 }
 
 socket.emit('addRectangle', dataToSend); //send out a message of "addRectangle" to the server, it will handle the details (party planning)

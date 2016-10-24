@@ -1,15 +1,20 @@
-/*html, body{
+html, body{
   height:100%;
   width: 100%;
   font-size: 30px;
-}*/
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
 
 .room{
   display: block;
-  position: absolute;
+  position: relative;
   height:400px;
   width:400px;
-  left:400px;
+  /*left: 50%;*/
   top:50px;
   border: black 1px solid;
   overflow: hidden;
@@ -22,7 +27,7 @@
   width: 100px;
   left:0px;
   top:0px;
-  background-color: red;
+  background-color: blue;
   border:yellow 1px dashed;
 }
 
