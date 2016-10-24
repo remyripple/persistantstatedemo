@@ -23,11 +23,22 @@ app.use(express.static('public')) //server out everything that is in the public 
 io.on('connection', function(socket){ //if socket.io sees a new connection, do something with them...
     console.log(socket.id) //prints out the socket that connected (ie: all users + the projection)
 
+//THIS IS THE CONTROLLER1 HIT
   socket.on('controller1hit', function(data){ //look for any messages with the "addRectangle"
     console.log("controller1 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
     io.emit("controller1ToResult1", data); //send out a message to the projection to add a rect to the screen.
 })
-
+//THIS IS THE CONTROLLER2HIT
+  socket.on('controller2hit', function(data){ //look for any messages with the "addRectangle"
+    console.log("controller2 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+    io.emit("controller2ToResult2", data); //send out a message to the projection to add a rect to the screen.
+  })
+//THIS IS THE CONTROLLER3HIT
+  socket.on('controller3hit', function(data){ //look for any messages with the "addRectangle"
+    console.log("controller3 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+    io.emit("controller3ToResult3", data); //send out a message to the projection to add a rect to the screen.
+  })
+//THIS IS THE RESET BUTTON HIT
 socket.on('ResetButton', function(data){ //look for any messages with the "addRectangle"
   console.log("button is reseting" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
   io.emit("ButtonResetingtoRoom", data); //send out a message to the projection to add a rect to the screen.
