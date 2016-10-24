@@ -16,18 +16,22 @@ $('.room').click(function(){
 //   }).appendTo('.result1')
 // })
 
-socket.on("projectionRectangle", function(data){ //if we see a projectionRectangle message then do some stuff
+socket.on("controller1ToResult1", function(data){ //if we see a projectionRectangle message then do some stuff
   console.log(data);
-  // $('.result1').click(function(e){
     $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
       'position' : 'relative',
       'top' : '5px'
     }).appendTo('.result1')
   })
 
+  socket.on("ButtonResetingtoRoom", function(data){ //if we see a projectionRectangle message then do some stuff
+    console.log(data);
+      location.reload(true);
+    })
 
 
-  // })
+
+
 
 // socket.on("projectionRectangle", function(data){ //if we see a projectionRectangle message then do some stuff
 //   console.log(data);
@@ -51,7 +55,7 @@ socket.on("projectionRectangle", function(data){ //if we see a projectionRectang
 //       "top" : position.top,
 //       "left" : position.left
 //     }).appendTo('body')
-//
+// 🐀
 //   })
 //
 // })

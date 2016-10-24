@@ -9,6 +9,9 @@
   display: block;
   top:500px;
   left:400px;
+  background-color: blue;
+  height:50px;
+  width:400px;
 }
 
 .container{

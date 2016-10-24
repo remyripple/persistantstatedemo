@@ -12,12 +12,7 @@ socket.on('connect', function(data){ //when connected, do something
   console.log('connected to the server' + socket.id) //log out our id
 })
 
-// $('.button').click(function(v){
-// var buttonRefresh = {
-//
-// }
-// socket.emit('addRectangle', buttonRefresh)
-// })
+//THIS IS THE FUNCTION FOR CONTROLLER 1
 
 $('.controller1').click(function(e){ //on click, do something
 
@@ -25,24 +20,24 @@ console.log(e);
 
 console.log("click")
 
-
-// location.reload(true);
-
-// $('<div></div>').css({
-//   'position': 'absolute',
-//   'height' :  '10px',
-//   'width' : '10px',
-//   'top' : e.clientY,
-//   'left' : e.clientX,
-//   'background-color' : 'blue'
-// }).appendTo('body')
-
-// $('<div>')
-
-var dataToSend = {
+var data = {
   'top' : e.clientY,
   'left' : e.clientX,
 }
+socket.emit('controller1hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
 
-socket.emit('addRectangle', dataToSend); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+
+//THIS RESETS THE PROJECTION SCREEN
+
+$('.button').click(function(b){ //on click, do something
+
+console.log(b);
+
+console.log("clickbutton")
+
+var dataToReset = {
+}
+
+socket.emit('ResetButton', dataToReset); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
 })
