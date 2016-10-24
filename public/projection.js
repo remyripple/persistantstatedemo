@@ -17,17 +17,3 @@ socket.on("projectionRectangle", function(data){ //if we see a projectionRectang
   }).appendTo('body')
 
 })
-
-socket.on('storedPositionsMessage', function(spData){
-  console.log(spData);
-
-  spData.forEach(function(position){
-    $("<div>👻</div>").css({
-      'position': 'absolute',
-      "top" : position.top,
-      "left" : position.left
-    }).appendTo('body')
-
-  })
-
-})
