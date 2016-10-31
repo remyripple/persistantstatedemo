@@ -64,6 +64,63 @@ var data = {
 socket.emit('controller4hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
 })
 
+//THIS IS THE FUNCTION FOR CONTROLLER 5
+
+$('.controller5').click(function(c){ //on click, do something
+
+console.log(c);
+
+console.log("click")
+
+var data = {
+
+}
+socket.emit('controller5hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
+
+//THIS IS THE FUNCTION FOR CONTROLLER 6
+
+$('.controller6').click(function(c){ //on click, do something
+
+console.log(c);
+
+console.log("click")
+
+var data = {
+
+}
+socket.emit('controller6hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
+
+//THIS IS THE FUNCTION FOR CONTROLLER 7
+
+$('.controller7').click(function(c){ //on click, do something
+
+console.log(c);
+
+console.log("click")
+
+var data = {
+
+}
+socket.emit('controller7hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
+
+//THIS IS THE FUNCTION FOR CONTROLLER 8
+
+$('.controller8').click(function(c){ //on click, do something
+
+console.log(c);
+
+console.log("click")
+
+var data = {
+
+}
+socket.emit('controller8hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
+
+
 
 
 //THIS RESETS THE PROJECTION SCREEN

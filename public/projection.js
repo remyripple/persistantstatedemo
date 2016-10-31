@@ -9,6 +9,15 @@ $('.room').click(function(){
   console.log("click");
 })
 
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+
 // $('.result1').click(function(z){
 //   $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
 //     'position' : 'relative',
@@ -21,7 +30,7 @@ $('.room').click(function(){
 
 socket.on("controller1ToResult1", function(data){ //if we see a projectionRectangle message then do some stuff
   console.log(data);
-    $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+    $("<img src='assets/result1.png'>").css({
       'position' : 'relative',
       'top' : '5px'
     }).appendTo('.result1')
@@ -31,7 +40,7 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
 
   socket.on("controller2ToResult2", function(data){ //if we see a projectionRectangle message then do some stuff
     console.log(data);
-      $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+      $("<img src='assets/result2.gif'>").css({
         'position' : 'relative',
         'top' : '5px'
       }).appendTo('.result2')
@@ -41,28 +50,92 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
 
   socket.on("controller3ToResult3", function(data){ //if we see a projectionRectangle message then do some stuff
     console.log(data);
-      $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+      $("<img src='assets/result3.gif'>").css({
         'position' : 'relative',
         'top' : '5px'
       }).appendTo('.result3')
     })
 
 
-//THIS IS THE RESULT FOR CONTROLLER 3 CLICK
+//THIS IS THE RESULT FOR CONTROLLER 4 CLICK
 
       socket.on("controller4ToResult4", function(data){ //if we see a projectionRectangle message then do some stuff
         console.log(data);
-          $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+          $("<img src='assets/result4.png'>").css({
             'position' : 'relative',
             'top' : '5px'
           }).appendTo('.result4')
         })
 
+//THIS IS THE RESULT FOR CONTROLLER 5 CLICK
+
+              socket.on("controller5ToResult5", function(data){ //if we see a projectionRectangle message then do some stuff
+                console.log(data);
+                  $("<img src='assets/result5.png'>").css({
+                    'position' : 'relative',
+                    'top' : '5px'
+                  }).appendTo('.result5')
+                })
+
+//THIS IS THE RESULT FOR CONTROLLER 6 CLICK
+
+          socket.on("controller6ToResult6", function(data){ //if we see a projectionRectangle message then do some stuff
+              console.log(data);
+                $("<img src='assets/result6.png'>").css({
+                  'position': 'relative',
+                      'top' : '5px'
+                          }).appendTo('.result6')
+                        })
+
+//THIS IS THE RESULT FOR CONTROLLER 7 CLICK
+
+        socket.on("controller7ToResult7", function(data){ //if we see a projectionRectangle message then do some stuff
+          console.log(data);
+            $("<img src='assets/result7.png'>").css({
+                  'position' : 'relative',
+                  'top' : '5px'
+                }).appendTo('.result7')
+                })
+
+//THIS IS THE RESULT FOR CONTROLLER 8 CLICK
+
+      socket.on("controller8ToResult8", function(data){ //if we see a projectionRectangle message then do some stuff
+        console.log(data);
+          $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+              'position' : 'relative',
+              'top' : '5px'
+            }).appendTo('.result8')
+          })
+
   //THIS IS THE RESULT FOR BUTTON RESET
 
   socket.on("ButtonResetingtoRoom", function(data){ //if we see a projectionRectangle message then do some stuff
     console.log(data);
-      location.reload(true);
+    $('.result1').animateCss('hinge');
+    $('.result2').animateCss('hinge');
+    $('.result3').animateCss('hinge');
+    $('.result4').animateCss('hinge');
+    $('.result5').animateCss('hinge');
+    $('.result6').animateCss('hinge');
+    $('.result7').animateCss('hinge');
+    $('.result8').animateCss('hinge');
+      // location.reload(true);
+
+$(".result1").delay(4000).fadeOut(0);
+$(".result2").delay(3500).fadeOut(0);
+$(".result3").delay(2000).fadeOut(0);
+$(".result4").delay(3000).fadeOut(0);
+$(".result5").delay(3750).fadeOut(0);
+$(".result6").delay(4500).fadeOut(0);
+$(".result7").delay(3500).fadeOut(0);
+$(".result8").delay(3000).fadeOut(0);
+
+
+
+setTimeout(function(){
+    location.reload();
+},5000); //delayTime should be written in milliseconds e.g. 1000 which equals 1 second
+
     })
 
 

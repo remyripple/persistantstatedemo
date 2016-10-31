@@ -43,6 +43,26 @@ io.on('connection', function(socket){ //if socket.io sees a new connection, do s
       console.log("controller4 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
       io.emit("controller4ToResult4", data); //send out a message to the projection to add a rect to the screen.
     })
+  //THIS IS THE controller5hitHIT
+      socket.on('controller5hit', function(data){ //look for any messages with the "addRectangle"
+        console.log("controller5 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+        io.emit("controller5ToResult5", data); //send out a message to the projection to add a rect to the screen.
+      })
+      //THIS IS THE controller6hitHIT
+          socket.on('controller6hit', function(data){ //look for any messages with the "addRectangle"
+            console.log("controller6 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+            io.emit("controller6ToResult6", data); //send out a message to the projection to add a rect to the screen.
+          })
+          //THIS IS THE controller7hitHIT
+              socket.on('controller7hit', function(data){ //look for any messages with the "addRectangle"
+                console.log("controller7 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+                io.emit("controller7ToResult7", data); //send out a message to the projection to add a rect to the screen.
+              })
+              //THIS IS THE controller8hitHIT
+                  socket.on('controller8hit', function(data){ //look for any messages with the "addRectangle"
+                    console.log("controller8 change" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.
+                    io.emit("controller8ToResult8", data); //send out a message to the projection to add a rect to the screen.
+                  })
 //THIS IS THE RESET BUTTON HIT
 socket.on('ResetButton', function(data){ //look for any messages with the "addRectangle"
   console.log("button is reseting" + data); //log out the "data" in this case you get true, but you could use this to get any arbitrary data you want, think position, color, etc.

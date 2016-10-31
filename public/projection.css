@@ -9,6 +9,14 @@ body{
   justify-content: center;
 }
 
+.house{
+  z-index: -5;
+  position: absolute;
+  height:971px;
+  width: 900px;
+  background-image: url(assets/house.png);
+}
+
 .room{
   display: block;
   position: relative;
@@ -17,93 +25,234 @@ body{
   /*left: 50%;*/
   top:150px;
   border: black 1px solid;
-  overflow: hidden;
+  overflow: visible;
+  background-image: url('assets/bg.png')
 }
 
 .result1{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
   width: 200px;
   left:0px;
   top:0px;
-  background-color: blue;
+  /*background-color: blue;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 5s;
+  -moz-animation-delay: 2s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 5s;
+  -MS-animation-delay: 2s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 5s;
+  -o-animation-delay: 2s;
+  -o-animation-iteration-count: 1;
+
+  -animation-duration: 5s;
+  -animation-delay: 2s;
+  -animation-iteration-count: 1;
 }
 
 .result2{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
   width: 200px;
   left:200px;
   top:0px;
-  background-color: red;
+  /*background-color: red;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 1.5s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1.5s;
+  -o-animation-iteration-count: 1;
 }
 
 .result3{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
-  width: 400px;
+  width: 396px;
   left:400px;
   top:0px;
-  background-color: green;
+  /*background-color: green;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 0s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 0s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 0s;
+  -o-animation-iteration-count: 1;
 }
 
 .result4{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
   width: 400px;
   left:0px;
   top:200px;
-  background-color: brown;
+  /*background-color: brown;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 1s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+  -o-animation-iteration-count: 1;
 }
 
 .result5{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
   width: 400px;
   left:0px;
   top:400px;
-  background-color: black;
+  /*background-color: black;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 2s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 2s;
+  -o-animation-iteration-count: 1;
 }
 
 .result6{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:400px;
   width: 200px;
   left:400px;
   top:200px;
-  background-color: red;
+  /*background-color: red;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 2.5s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 2.5s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 2.5s;
+  -o-animation-iteration-count: 1;
 }
 
 .result7{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:400px;
-  width: 200px;
+  width: 196px;
   left:600px;
   top:200px;
-  background-color: blue;
+  /*background-color: blue;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 1.5s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1.5s;
+  -o-animation-iteration-count: 1;
 }
 
 .result8{
+  overflow: hidden;
   display: block;
   position: absolute;
   height:200px;
-  width: 800px;
+  width: 796px;
   left:0px;
   top:600px;
-  background-color: red;
+  /*background-color: red;*/
   border:yellow 1px dashed;
+
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+
+  -MS-animation-duration: 3s;
+  -MS-animation-delay: 1s;
+  -MS-animation-iteration-count: 1;
+
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+  -o-animation-iteration-count: 1;
 }
