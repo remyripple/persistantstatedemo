@@ -101,7 +101,7 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
 
       socket.on("controller8ToResult8", function(data){ //if we see a projectionRectangle message then do some stuff
         console.log(data);
-          $("<img src='assets/result8.png'>").css({
+          $("<img src='assets/result8.gif'>").css({
               'position' : 'relative',
               'top' : '5px'
             }).appendTo('.result8')
@@ -121,14 +121,14 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
     $('.result8').animateCss('hinge');
       // location.reload(true);
 
-$(".result1").delay(4000).fadeOut(0);
-$(".result2").delay(3500).fadeOut(0);
-$(".result3").delay(2000).fadeOut(0);
-$(".result4").delay(3000).fadeOut(0);
-$(".result5").delay(3750).fadeOut(0);
-$(".result6").delay(4500).fadeOut(0);
-$(".result7").delay(3500).fadeOut(0);
-$(".result8").delay(3000).fadeOut(0);
+$(".result1").delay(4500).fadeOut(0);
+$(".result2").delay(4200).fadeOut(0);
+$(".result3").delay(2500).fadeOut(0);
+$(".result4").delay(3500).fadeOut(0);
+$(".result5").delay(4500).fadeOut(0);
+$(".result6").delay(5200).fadeOut(0);
+$(".result7").delay(4200).fadeOut(0);
+$(".result8").delay(3500).fadeOut(0);
 
 
 
