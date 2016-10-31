@@ -1,18 +1,24 @@
-var socket = io.connect('http://localhost:3400/') //connect to the server
+var socket = io.connect('150.253.91.226:3400/') //connect to the server
 
 socket.on('connect', function(data){ //when connected, do something
   console.log('connected to the server' + socket.id) //log out our id
 })
 
+$(window).bind(
+  'touchmove',
+   function(e) {
+    e.preventDefault();
+  }
+);
 
 
 //THIS IS THE FUNCTION FOR CONTROLLER 1
 
 $('.controller1').click(function(a){ //on click, do something
-
-console.log(a);
-
-console.log("click")
+//
+// console.log(a);
+//
+// console.log("click")
 
 var data = {
 
@@ -25,10 +31,10 @@ socket.emit('controller1hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER2
 
 $('.controller2').click(function(b){ //on click, do something
-
-console.log(b);
-
-console.log("click")
+//
+// console.log(b);
+//
+// console.log("click")
 
 var data = {
 
@@ -39,10 +45,10 @@ socket.emit('controller2hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER 3
 
 $('.controller3').click(function(c){ //on click, do something
-
-console.log(c);
-
-console.log("click")
+//
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -53,10 +59,10 @@ socket.emit('controller3hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER 4
 
 $('.controller4').click(function(c){ //on click, do something
-
-console.log(c);
-
-console.log("click")
+//
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -67,10 +73,10 @@ socket.emit('controller4hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER 5
 
 $('.controller5').click(function(c){ //on click, do something
-
-console.log(c);
-
-console.log("click")
+//
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -82,9 +88,9 @@ socket.emit('controller5hit', data); //send out a message of "addRectangle" to t
 
 $('.controller6').click(function(c){ //on click, do something
 
-console.log(c);
-
-console.log("click")
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -95,10 +101,10 @@ socket.emit('controller6hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER 7
 
 $('.controller7').click(function(c){ //on click, do something
-
-console.log(c);
-
-console.log("click")
+//
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -109,10 +115,10 @@ socket.emit('controller7hit', data); //send out a message of "addRectangle" to t
 //THIS IS THE FUNCTION FOR CONTROLLER 8
 
 $('.controller8').click(function(c){ //on click, do something
-
-console.log(c);
-
-console.log("click")
+//
+// console.log(c);
+//
+// console.log("click")
 
 var data = {
 
@@ -127,9 +133,9 @@ socket.emit('controller8hit', data); //send out a message of "addRectangle" to t
 
 $('.button').click(function(b){ //on click, do something
 
-console.log(b);
-
-console.log("clickbutton")
+// console.log(b);
+//
+// console.log("clickbutton")
 
 var dataToReset = {
 }
