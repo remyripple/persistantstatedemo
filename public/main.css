@@ -32,6 +32,8 @@ body{
   background-image: url('assets/house.png');
 }
 
+
+
 /*.housu{
 
   top:0px;
@@ -175,7 +177,9 @@ body{
   width: 200px;
   left:0px;
   top:0px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+  -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -187,7 +191,9 @@ body{
   width: 200px;
   left:200px;
   top:0px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+  -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -199,7 +205,9 @@ body{
   width: 396px;
   left:400px;
   top:0px;
-  border:yellow 1px dashed;
+border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -211,7 +219,9 @@ body{
   width: 400px;
   left:0px;
   top:200px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -223,7 +233,9 @@ body{
   width: 400px;
   left:0px;
   top:400px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -235,7 +247,9 @@ body{
   width: 200px;
   left:400px;
   top:200px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -247,7 +261,9 @@ body{
   width: 196px;
   left:600px;
   top:200px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
 
@@ -259,6 +275,8 @@ body{
   width: 796px;
   left:0px;
   top:600px;
-  border:yellow 1px dashed;
+  border:black 1px dashed;
+  background-color: white;
+    -webkit-animation-iteration-count: infinite;
 
 }
