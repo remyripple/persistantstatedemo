@@ -101,7 +101,7 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
 
       socket.on("controller8ToResult8", function(data){ //if we see a projectionRectangle message then do some stuff
         console.log(data);
-          $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+          $("<img src='assets/result8.png'>").css({
               'position' : 'relative',
               'top' : '5px'
             }).appendTo('.result8')
