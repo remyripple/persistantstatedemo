@@ -1,5 +1,5 @@
 {
-  "name": "persistantstatedemo",
+  "name": "housebuilding",
   "version": "1.0.0",
   "description": "a demo on using node npm socket.io and express.js",
   "main": "app.js",

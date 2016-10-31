@@ -1,3 +1,3 @@
-# persistant state demo
+# build build destroy destroy
 
-a demo on using node npm socket.io and express.js
+house house home home
