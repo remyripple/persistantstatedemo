@@ -50,6 +50,20 @@ var data = {
 socket.emit('controller3hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
 })
 
+//THIS IS THE FUNCTION FOR CONTROLLER 4
+
+$('.controller4').click(function(c){ //on click, do something
+
+console.log(c);
+
+console.log("click")
+
+var data = {
+
+}
+socket.emit('controller4hit', data); //send out a message of "addRectangle" to the server, it will handle the details (party planning)
+})
+
 
 
 //THIS RESETS THE PROJECTION SCREEN

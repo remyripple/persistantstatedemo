@@ -4,11 +4,15 @@
   font-size: 30px;
 }*/
 
+body{
+  display: flex;
+  justify-content: center;
+}
+
 .button{
   position: absolute;
   display: block;
   top:500px;
-  left:400px;
   background-color: blue;
   height:50px;
   width:400px;
@@ -16,10 +20,9 @@
 
 .container{
   display: block;
-  position: absolute;
+  position: relative;
   height:400px;
   width:400px;
-  left:400px;
   top:50px;
   border: black 1px solid;
   overflow: hidden;
@@ -38,7 +41,7 @@
 .controller2{
   display: block;
   position: absolute;
-  height:200px;
+  height:100px;
   width: 100px;
   left:100px;
   top:0px;
@@ -60,8 +63,8 @@
 .controller4{
   display: block;
   position: absolute;
-  height:200px;
-  width: 100px;
+  height:100px;
+  width: 200px;
   left:0px;
   top:100px;
   background-color: red;
@@ -71,10 +74,10 @@
 .controller5{
   display: block;
   position: absolute;
-  height:200px;
+  height:100px;
   width: 200px;
-  left:200px;
-  top:100px;
+  left:0px;
+  top:200px;
   background-color: red;
   border:yellow 1px dashed;
 }
@@ -82,15 +85,26 @@
 .controller6{
   display: block;
   position: absolute;
-  height:100px;
+  height:200px;
   width: 100px;
-  left:100px;
-  top:200px;
+  left:200px;
+  top:100px;
   background-color: red;
   border:yellow 1px dashed;
 }
 
 .controller7{
+  display: block;
+  position: absolute;
+  height:200px;
+  width: 100px;
+  left:300px;
+  top:100px;
+  background-color: red;
+  border:yellow 1px dashed;
+}
+
+.controller8{
   display: block;
   position: absolute;
   height:100px;

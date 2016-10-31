@@ -47,6 +47,17 @@ socket.on("controller1ToResult1", function(data){ //if we see a projectionRectan
       }).appendTo('.result3')
     })
 
+
+//THIS IS THE RESULT FOR CONTROLLER 3 CLICK
+
+      socket.on("controller4ToResult4", function(data){ //if we see a projectionRectangle message then do some stuff
+        console.log(data);
+          $("<img src='http://www.sherv.net/cm/emoticons/hearts/happy-heart.gif'>").css({
+            'position' : 'relative',
+            'top' : '5px'
+          }).appendTo('.result4')
+        })
+
   //THIS IS THE RESULT FOR BUTTON RESET
 
   socket.on("ButtonResetingtoRoom", function(data){ //if we see a projectionRectangle message then do some stuff
