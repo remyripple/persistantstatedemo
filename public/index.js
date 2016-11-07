@@ -1,4 +1,4 @@
-var socket = io.connect('150.253.91.226:3400/') //connect to the server
+var socket = io.connect() //connect to the server
 
 var gate = true;
 
